@@ -1,0 +1,220 @@
+/* -------------------------------- GENERAL -----------------------------------------------*/
+	body {
+	  overflow-x: hidden; /* Hide horizontal scrollbar */
+	  width:100%;
+	  height:100%;
+	  background: url('img/bg_radio.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  padding-top: 130px;    
+   	  z-index: 0;
+	}
+
+	button{
+		font-family: 'Raleway', sans-serif;
+	}
+
+	p{
+		font-family: 'Raleway', sans-serif;
+        font-size:1.2em;
+	}
+
+	h3{
+	    text-align: center;
+        font-family: 'Staatliches', cursive;
+	}
+
+	hr{
+		border-top: 3px solid rgb(255, 255, 255);
+	}
+
+	.importante{
+		color:#e84c4c;
+		font-family: 'Red Rose', cursive;
+	}
+
+	.link_sin_estilo{
+		color:white;
+	}
+
+	.link_sin_estilo:hover{
+		color:white;
+		text-decoration: none;
+	}
+
+	.mobile-size-text{
+	    font-size: 0.9em;
+	}
+
+	.comilla_abrir{
+		font-size:1.4em; 
+		color:grey;
+		padding-right:5px;
+	}
+
+	.comilla_cerrar{
+		font-size:1.4em; 
+		color:grey;
+		padding-left:5px;
+	}
+
+	.fondo_subpaginas{
+		background-color:black;;
+		margin-top:30px;
+		padding:50px;
+	}
+
+	.texto_grande{
+		font-family: 'Red Rose', cursive;
+		font-size:1.3em;
+	}
+
+	.bg_personal{
+	  	background-color:black;
+	}
+
+	.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+/* ------------------------------ HEADER RADIO ------------------------------------------- */
+
+	.header{
+		background-color: #f3f3f3;
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;	
+	}
+	
+	.nav-link{
+	    color: #696767 !important;
+	}
+	
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+	.nav-link {
+		padding-right: .5rem !important;
+		padding-left: .5rem !important;
+	}
+	
+	.texto_imagen{
+        font-family: 'Staatliches', cursive;
+	    text-align: center;
+	    font-size: 0.9em;
+        color: white;
+        text-shadow: 1px 1px 2px #1e2c92, 0 0 1em #d61677, 0 0 0.2em #ce09a3;
+	}
+	
+	.fa-bars:before {
+        content: "\f0c9";
+        color: #696767;
+    }
+
+	#texto_imagen_horarios{
+		margin-top:15px;
+	}
+
+	#div_imagen_radio{
+		background:transparent url('img/header_radio.jpg') no-repeat center center /cover;
+	    background-position: 100% 100%;
+		width: auto;
+		height: 230px;
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;	
+	}
+	
+	/* Fixes dropdown menus placed on the right side */
+	.ml-auto .dropdown-menu {
+		left: auto !important;
+		right: 0px;
+	}
+	
+/* ------------------------------ FOOTER RADIO ---------------------------------------------*/
+	#footer{
+		padding:15px;
+		color:white;
+		background-color: black;
+	}
+
+	#subfooter{
+		color:white;
+		background-color: #2f2828;
+	}
+
+	.map-responsive{
+	    overflow:hidden;
+	    padding-bottom:50%;
+	    position:relative;
+	    height:0;
+	}
+	.map-responsive iframe{
+	    left:0;
+	    top:0;
+	    height:100%;
+	    width:100%;
+	    position:absolute;
+	}
+	
+	
+/* ----------------------------- MEDIA QUERIES --------------------------------------------*/
+
+/* Media para móviles */
+@media (max-width: 576px) {
+	#header_desktop{display:none;}
+}  
+
+
+/* Media para móviles m */
+@media (min-width: 321px) {
+
+}
+
+/* Media para móviles l */
+@media (min-width: 376px) {
+
+} 
+
+/* Medida para tablet */
+@media (min-width: 426px) {
+	#header_movil{display:none;}
+	#header_desktop{display:flex;}
+	#footer{font-size: 0.5em;}
+}
+
+/* Medida para laptop */
+@media (min-width: 769px) {
+	#mensaje_header{font-size:1em;}
+	#div_imagen_radio{height:400px; background-position: 100% 80%;}
+	.texto_imagen{font-size:2.5em;}
+	.mobile-size-text{font-size:1.5em;} 
+	#footer img{width: 150px;}
+}
+
+/* Media para laptop-l */
+@media (min-width: 1025px) {
+	#div_imagen_radio{height:430px; background-position:100% 70%;}
+	.texto_imagen{font-size:3em;}
+	.mobile-size-text{font-size:2em;} 
+	#footer img{width: 220px;}
+}
+
+/* Media para desktop */
+@media (min-width: 1441px) {
+	#div_imagen_radio{height:550px;}
+	.texto_imagen{font-size:3.5em;} 
+	#footer{font-size:1.2em;}
+	#footer img{width: 260px; margin-left:30px;}
+	.mobile-size-text{font-size:2.5em;}
+}

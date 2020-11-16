@@ -1,0 +1,550 @@
+/* ------------------------- FUENTES DESCARGADAS ------------------------------------------*/
+    @font-face {
+        font-family: NOVABOLD;
+        src: url(fonts/NOVABOLD.otf);
+    }
+    
+    @font-face {
+        font-family: WALKWAY;
+        src: url(fonts/WalkwayBlack.ttf);
+    }
+    
+    @font-face {
+        font-family: FUTRFW;
+        src: url(fonts/FUTRFW.TTF);
+    }
+    
+    @font-face {
+        font-family: GOURMETHEARTH;
+        src: url(fonts/GourmetHearth_df.otf);
+    }
+    
+    @font-face {
+        font-family: COOLVETICA;
+        src: url(fonts/coolvetica_rg.ttf);
+    }
+    
+    @font-face {
+        font-family: ALIENS;
+        src: url(fonts/alien_cows_trial.ttf);
+    }
+
+
+/* -------------------------------- GENERAL -----------------------------------------------*/
+
+	html, body {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    
+	body {
+	  width:100%;
+	  height:100%;
+	  background: url('img/dark_bg2.jpg') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  padding-top: 130px;    
+   	  z-index: 0;
+	}
+	
+	.bg_blanco{
+	     overflow-x: hidden; /* Hide horizontal scrollbar */
+         padding-top:30px;
+         padding-bottom:30px;
+    	 background: url('img/bg_radio.jpg') no-repeat center center fixed;
+    	 -webkit-background-size: cover;
+    	 -moz-background-size: cover;
+    	 background-size: cover;
+    	 -o-background-size: cover;
+       	 z-index: 0;
+       	 border-radius:5px;
+	}
+
+	button{
+		font-family: GOURMETHEARTH;
+	}
+
+	p{
+		font-family: font_lato;
+		color: white;
+	}
+
+	h3,h2,h1{
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: GOURMETHEARTH;
+	}
+
+	hr{
+		border-top: 3px solid rgb(255, 255, 255);
+	}
+
+	.importante{
+		color:#e84c4c;
+	}
+
+	.link_sin_estilo{
+		color:white;
+	}
+
+	.link_sin_estilo:hover{
+		color:white;
+		text-decoration: none;
+	}
+
+	.mobile-size-text{
+	    font-size: 0.9em;
+	}
+
+	.comilla_abrir{
+		font-size:1.4em; 
+		color:grey;
+		padding-right:5px;
+	}
+
+	.comilla_cerrar{
+		font-size:1.4em; 
+		color:grey;
+		padding-left:5px;
+	}
+
+	.fondo_subpaginas{
+		background-color:black;;
+		margin-top:30px;
+		padding:50px;
+	}
+
+	.texto_grande{
+		font-family: GOURMETHEARTH;
+		font-size:1.3em;
+	}
+
+	.bg_personal{
+	  	background-color:black;
+	}
+
+	.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	
+	/* Texto para menú y donaciones */
+	.font_walkway{
+        font-family: WALKWAY;
+	}
+	
+	/* Texto de "LA CASA DEL PADRE" */
+	.font_future{
+	    font-family: FUTRFW;
+	}
+	
+	/* Texto de "Un lugar donde la presencia de Dios..." */
+	.font_coolvetica{
+	    font-family: COOLVETICA;
+	}
+	.font_aliens{
+	    font-family: ALIENS;
+	}
+	
+	/* Para textos pequeños */
+	.font_lato{
+	    font-family: 'Lato', sans-serif;
+	}
+	
+	.color_black{
+	    color:#403e3f;
+	}
+
+/* ------------------------------- HEADER -------------------------------------------------*/
+	.header{
+		background-color: #000000;
+	}
+
+	#mensaje_header{
+		font-size:0.7em;
+		margin-left:80px; 
+		color:white
+	}
+
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+	.nav-link {
+		padding-right: .5rem !important;
+		padding-left: .5rem !important;
+	}
+
+	#div_video_mobile{
+		height: 75% !important;
+	}
+
+	#div_imagen{
+		background:transparent url('img/lcp-manos-arriba.jpg') no-repeat center center /cover;
+	    background-position: 100% 100%;
+		width: auto;
+		height: 230px;
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;	
+	}
+
+	.texto_imagen{
+	    text-align: center;
+        font-size: 1.5em;
+	    color: white;
+	}
+	
+	#texto_imagen_sub{
+        border: 1px solid white;
+        border-radius: 37px;
+        padding: 15px;
+        font-size:0.5em;
+	}
+
+	#texto_imagen_horarios{
+		margin-top:15px;
+	}
+
+	/* Fixes dropdown menus placed on the right side */
+	.ml-auto .dropdown-menu {
+		left: auto !important;
+		right: 0px;
+	}
+	
+	.fa-whatsapp {
+        color: lime !important;
+	}
+	
+	.fa-whatsapp:hoveer {
+        color: green !important;
+	}
+	
+	.fa-whatsapp:before {
+        color: lime !important;
+	}
+	
+    .boton_whatsapp{
+        background-color:black; 
+        border:1px solid black; 
+    }
+	
+    .boton_whatsapp:active, .boton_whatsapp:focus, .boton_whatsapp:visited, .boton_whatsapp:hover, .boton_whatsapp:focus-within{
+        background-color:black !important;
+        border:1px solid black !important;
+    }
+    
+    .boton_whatsapp:focus{
+        background-color:black !important;
+        border:1px solid black !important;
+    }
+    
+    
+/* ----------------------------- VÍDEO HEADER ---------------------------------------------*/
+
+    #cabecera_video{
+         width: 100%;
+         height: 700px;
+     }
+    #video {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height:800px;
+         z-index: -10;
+         visibility: visible;
+    }
+    
+    #texto_video{
+         margin-top: 150px;
+    }
+    
+    #texto_video p{
+         text-shadow: 4px 4px 4px #333;
+         text-align: center;
+    }
+
+/* ----------------------------- ÚLTIMO SERMÓN  -------------------------------------------*/
+
+	#titulo_sermon{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 3em;
+	}
+
+	#imagen_ultimo_sermon{
+		background-size: cover;
+		background:transparent url('img/sermon_ejemplo.jpg') no-repeat center center /cover;
+		width: auto;
+	    height: 230px;
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;
+	    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41) !important;	
+	}
+	
+	#div_video_inicial{
+	    height: 560px !important;
+	    margin-bottom:50px;
+	}
+	
+	#iframe_video_inicial{
+	    height:560px !important;
+	}
+
+	.datos_sermon{
+		color: white;
+	    text-shadow: none;
+	}
+	
+
+/* ------------------------------NUESTRAS REDES --------------------------------------------*/
+
+    #boton_instagram{
+        background-color: #1d8c1d;
+        border: 3px solid #1d8c1d;;
+        font-size: 2em;
+        border-radius:5px;
+        padding-right: 38px;
+    }
+    
+    #boton_instagram:hover{
+        background-color: white;
+        border-color: #1d8c1d ;
+    }
+    
+    #boton_instagram:hover a{
+        color:#1d8c1d;
+    }
+    
+    #boton_youtube{
+        background-color: red;
+        border: 3px solid red;
+        font-size: 2em;
+        border-radius:5px;
+        padding-right: 45px;
+    }
+    
+    #boton_youtube:hover{
+        background-color: white;
+        border-color: red;
+    }
+    
+    #boton_youtube:hover a{
+        color: red;
+    }
+    
+    #boton_facebook{
+        background-color: blue;
+        border: 3px solid blue;
+        font-size: 2em;
+        border-radius:5px;
+        padding-right: 38px;
+    }
+    
+    #boton_facebook:hover{
+        background-color: white;
+        border-color: blue;
+    }
+    
+    #boton_facebook:hover a{
+        color: blue;
+    }
+
+/* ------------------------------NUESTRA VOZ ----------------------------------------------*/
+	#imagen_pastor{
+		background-size: cover;
+		background:transparent url('img/tony_pastor.jpg') no-repeat center center /cover;
+		width: auto;
+	    height: 300px;
+	}
+
+	#imagen_pastora{
+		background-size: cover;
+		background:transparent url('img/voz_pastora.jpg') no-repeat center center /cover;
+		width: auto;
+	    height: 300px;
+	}
+
+	#texto_pastor{
+		background-color: white;
+	}
+
+	#texto_pastor p{
+		color: #4c4949 !important;
+	}
+
+/* -----------------------------APORTACIÓN -----------------------------------------------*/
+
+	.icono_color{
+    	color: white;
+	}
+
+/* ------------------------------ FOOTER --------------------------------------------------*/
+	#footer{
+		padding:15px;
+		color:white;
+		background-color: black;
+	}
+
+	#subfooter{
+		color:white;
+		background-color: #2f2828;
+	}
+
+	.map-responsive{
+	    overflow:hidden;
+	    padding-bottom:50%;
+	    position:relative;
+	    height:0;
+	}
+	.map-responsive iframe{
+	    left:0;
+	    top:0;
+	    height:100%;
+	    width:100%;
+	    position:absolute;
+	}
+	
+/* ----------------------------- MEDIA QUERIES --------------------------------------------*/
+
+/* Media para móviles */
+@media (max-width: 576px) {
+    #body{width:105% !important;}
+    #navbarSupportedContent1{font-size: 0.6em;}
+	#header_desktop{display:none;}
+	#div_video_desktop{display:none;}
+	#div_pastora{margin-top:60px;}
+	#boton_instagram.mr-5{margin-right: 10px !important;}
+	#boton_youtube.mr-5{margin-right: 10px !important;}
+	#boton_facebook.mr-5{margin-right: 0px !important;}
+	#boton_instagram{width: 50px;}
+	#boton_youtube{width: 50px;}
+	#boton_facebook{width: 50px;}
+	#boton_instagram a{font-size: 0.8em;}
+	#boton_youtube a{font-size: 0.8em;}
+	#boton_facebook a{font-size: 0.8em;}
+	#texto_servicios{padding-left: 25px; padding-right: 25px; font-size:0.9em;}
+	h3{font-size:1.3em !important;}
+	p{font-size:0.7em;}
+	#imagen_pastora{background-position: 15% 100%;}
+	#texto_pastor,#imagen_pastor,#imagen_pastora{border-radius:0px !important;}
+	.texto_grande{font-size:1em;}
+	#video{height: 450px;}
+	#cabecera_video{height:180px;}
+	#texto_video{font-size:0.7em; margin-top:0px;}
+}  
+
+
+/* Media para móviles m */
+@media (min-width: 321px) {
+    #navbarSupportedContent1{font-size: 0.8em;}
+	#boton_nuestro_trabajo{margin-left:5px;}
+	#texto_imagen_horarios{margin-top:-20px;}
+	#imagen_pastora{background-position: 40% 100%;}
+	p{font-size:0.8em;}
+	#texto_pastor,#imagen_pastor,#imagen_pastora{border-radius:0px !important;}
+}
+
+/* Media para móviles l */
+@media (min-width: 376px) {
+    #navbarSupportedContent1{font-size: 1em;}
+	#imagen_ultimo_sermon{height:320px;}
+	#boton_nuestro_trabajo{margin-left:35px;}
+	.texto_imagen{font-size:1.8em;}
+	#imagen_pastora{background-position: 100% 100%;}
+	#texto_pastor,#imagen_pastor,#imagen_pastora{border-radius:0px !important;}
+} 
+
+/* Medida para tablet */
+@media (min-width: 426px) {
+    p{font-size:1em;}
+	#header_movil{display:none;}
+	#header_desktop{display:flex;}
+	#div_video_mobile{display:none;} 
+	#div_video_desktop{display:flex;}
+	#div_imagen{height: 360px; background-position: 100% 90%;}
+	#div_video_inicial{margin-bottom:0px;}
+	.texto_imagen{font-size:2em;}
+	.mobile-size-text{font-size:1.2em;} 
+	#texto_imagen_horarios{margin-top:50px; font-size:1.5em;}
+	#boton_instagram{width: 80px; padding-left: 24px;}
+	#boton_youtube{width: 80px}
+	#boton_facebook{width: 80px; padding-left: 24px;}
+	#boton_instagram a{font-size: 1em;}
+	#boton_youtube a{font-size: 1em;}
+	#boton_facebook a{font-size: 1em;}
+	#imagen_ultimo_sermon{height:280px;}
+	#texto_ultimo_sermon{padding-top: 0px;}
+	#div_pastora{margin-top:0px;}
+	#div_pastor{margin-right:60px; margin-left:-20px;}
+	#imagen_pastora{background-position: 0% 100%;}
+	#boton_nuestro_trabajo{margin-left: -85px; width:340px;}
+	#boton_galeria{margin-left: -30px; width: 270px;}
+	#footer{font-size: 0.5em;}
+	#texto_servicios{padding-left: 0px; padding-right: 0px;}
+	#texto_servicios h3{font-size:1.5em;}
+	#texto_servicios p{font-size:1em;}
+	#imagen_pastor,#imagen_pastora{border-radius: 20px 20px 0px 0px !important;}
+	#texto_pastor{border-radius: 0px 0px 20px 20px !important;}
+	#video{height: 800px;}
+	#cabecera_video{height: 480px;}
+}
+
+/* Medida para laptop */
+@media (min-width: 769px) {
+	#mensaje_header{font-size:1em;}
+	#div_imagen{height:400px; background-position: 100% 80%;}
+	.texto_imagen{font-size:2.5em;}
+	.mobile-size-text{font-size:1.5em;} 
+	#texto_imagen_horarios{margin-top:70px; font-size:2em;}
+	#boton_nuestro_trabajo{font-size: 1em;}
+	#boton_nuestro_trabajo{margin-left: -60px;}
+	#footer{font-size:0.7em;}
+	#footer img{width: 150px;}
+	#cabecera_video{height: 580px;}
+}
+
+/* Media para laptop-l */
+@media (min-width: 1025px) {
+	#div_imagen{height:430px; background-position:100% 70%;}
+	.texto_imagen{font-size:3em;}
+	.mobile-size-text{font-size:2em;} 
+	#texto_imagen_horarios{margin-top:70px; font-size:2.5em;}
+	#texto_ultimo_sermon{font-size:1.3em;}
+	#imagen_pastora{background-position: 100% 18%;}
+	.texto_interaccion{font-size:1.3em;}
+	#boton_nuestro_trabajo{margin-left: -10px;}
+	#footer{font-size:0.9em;}
+	#footer img{width: 220px;}
+	#texto_servicios h3{font-size:2em;}
+	#texto_servicios p{font-size:1.5em;}
+	#cabecera_video{height: 650px;}
+}
+
+/* Media para desktop */
+@media (min-width: 1441px) {
+	#div_imagen{height:550px;}
+	.texto_imagen{font-size:3.5em;} 
+	#texto_imagen_horarios{margin-top:150px; font-size:2.5em;}
+	#imagen_ultimo_sermon{height:380px !important;}
+	#texto_ultimo_sermon{font-size:1.6em;}
+	#imagen_pastor{background-position: 100% 20%;}
+	#imagen_pastora{background-position: 100% 20%;}
+	.texto_interaccion{font-size:1.6em;}
+	#boton_nuestro_trabajo{margin-left: 45px;}
+	#boton_galeria{width: 470px;}
+	#footer{font-size:1.2em;}
+	#footer img{width: 260px; margin-left:30px;}
+	.mobile-size-text{font-size:2.5em;}
+}
